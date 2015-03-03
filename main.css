@@ -371,3 +371,89 @@ footer a {
   text-decoration: none;
   color: #333;
 }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  position: relative;
+}
+
+.nav__list {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav__list {
+    display: block;
+  }
+
+  .box-shadow-menu {
+    display: none;
+  }
+
+  .hero {
+    width: 50%;
+    order: -2;
+  }
+
+  .weather {
+    width: 50%;
+    order: -1;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .page-container {
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    width: 50%;
+    order: -4;
+  }
+
+  .top-news {
+    width: 50%;
+    order: -3;
+  }
+
+  .scores {
+    width: 60%;
+    order: -2;
+  }
+
+  .weather {
+    width: 40%;
+    order: -1;
+  }
+}
+
+
+/**
+ * Hamburguer Icon
+ */
+.box-shadow-menu {
+  position: absolute;
+  right: 0.1em;
+  top: 1em;
+  padding-left: 1.25em;
+  font-size: 3em;
+  height: 1em;
+}
+
+.box-shadow-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.25em;
+  width: 1em;
+  height: 0.15em;
+  background: #ccc;
+  box-shadow: 
+    0 0.25em 0 0 #ccc,
+    0 0.5em 0 0 #ccc;
+}
