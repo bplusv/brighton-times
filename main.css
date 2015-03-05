@@ -7,7 +7,8 @@ body, html {
 
 body {
   font-family: Roboto;
-  font-size: 12px;
+  font-size: 16px;
+  line-height: 1.2em;
   color: #424242;
 }
 
@@ -95,8 +96,8 @@ ul {
 
 .nav__item {
   box-sizing: border-box;
-  display: inline-block;
-  width: 24%;
+  display: block;
+  margin: 0 auto;
   text-align: center;
   line-height: 24px;
   padding: 24px;
@@ -145,6 +146,7 @@ main {
   width: 100%;
   position: relative;
   background-image: url("./images/dog.jpg");
+  background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
 }
@@ -216,7 +218,7 @@ main {
 
 .scores {
   width: 100%;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 .scores__table {
@@ -226,7 +228,7 @@ main {
 
 .scores__table th,
 .scores__table td {
-  padding: 1em; 
+  padding: 0.5em; 
 }
 
 .scores__table th {
@@ -313,7 +315,7 @@ main {
 
 /*
  *
- * Weather
+ * Other News
  *
  */
 
@@ -348,6 +350,9 @@ main {
   text-decoration: underline;
 }
 
+.snippet p {
+
+}
 
 /*
  *
@@ -377,7 +382,7 @@ footer a {
 
 /**
  *
- * Responsive Fluid Design
+ * Responsive Moslty-Fluid & Layout-Shifting Design
  *
  */
 .content {
@@ -393,13 +398,17 @@ footer a {
   display: none;
 }
 
+.scores__location {
+  display: none;
+}
+
 
 /*
  *
  * Responsive Breakpoints changes
  *
  */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 730px) {
   .nav__list.collapsed,
   .nav__list.collapsed {
     display: block;
@@ -422,15 +431,19 @@ footer a {
     width: 50%;
     order: -1;
   }
-}
 
-@media screen and (min-width: 980px) {
-  .page-container,
-  .header__inner {
-    width: 980px;
-    margin: 0 auto;
+  .scores__location {
+    display: table-cell;
   }
 
+  .nav__item {
+    display: inline-block;
+    width: 24%;
+  }
+
+}
+
+@media screen and (min-width: 850px) {
   .hero {
     width: 50%;
     order: -4;
@@ -449,6 +462,15 @@ footer a {
   .weather {
     width: 40%;
     order: -1;
+  }
+}
+
+
+@media screen and (min-width: 950px) {
+  .page-container,
+  .header__inner {
+    width: 850px;
+    margin: 0 auto;
   }
 }
 
