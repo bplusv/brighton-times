@@ -35,7 +35,6 @@ ul {
 
 .news__more {
   float: right;
-  font-size: .8em;
   color: #333;
   text-decoration: none;
 }
@@ -61,15 +60,16 @@ ul {
 }
 
 .header__logo {
-  height: 72px;
-  margin-right: 1em;
+  height: 42px;
+  margin-right: 0.1em;
   vertical-align: top;
   margin-top: 12px;
 }
 
 .header__title {
   font-weight: 300;
-  font-size: 3em;
+  font-size: 1.5em;
+  line-height: 2em;
   margin: 0.5em 0.25em;
   display: inline-block;
   color: #212121;
@@ -92,6 +92,7 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
+  font-size: 0.8em;
 }
 
 .nav__item {
@@ -149,6 +150,8 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: 300px;
+  font-size: 0.9em;
+  margin-bottom: 1em;
 }
 
 .hero article {
@@ -172,9 +175,11 @@ main {
 
 .top-news {
   width: 100%;
-  height: 300px;
+  max-height: 300px;
   border-bottom: 1px solid #E0E0E0;
   padding: 1em;
+  font-size: 0.8em;
+  margin-bottom: 1em;
 }
 
 .news__title {
@@ -182,6 +187,7 @@ main {
   border-bottom: 1px solid #E0E0E0;
   line-height: 24px;
   font-size: 16px;
+  margin-bottom: 1em;
 }
 
 .top-news__item {
@@ -219,6 +225,8 @@ main {
 .scores {
   width: 100%;
   padding-top: 0.5em;
+  font-size: .8em;
+  margin-bottom: 1em;
 }
 
 .scores__table {
@@ -267,6 +275,8 @@ main {
 .weather {
   width: 100%;
   padding: 1em;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 
 .weather__location {
@@ -321,7 +331,9 @@ main {
 
 .recent-news {
   clear: both;
-  padding: 1em;
+  padding: 0 1em 1em;
+  font-size: 0.8em;
+  width: 100%;
 }
 
 .snippet {
@@ -333,6 +345,7 @@ main {
   width: 100px;
   float: left;
   margin-right: 1em;
+  display: none;
 }
 
 .snippet__title {
@@ -350,9 +363,6 @@ main {
   text-decoration: underline;
 }
 
-.snippet p {
-
-}
 
 /*
  *
@@ -364,6 +374,7 @@ footer {
   border-top: 1px solid #E0E0E0;
   padding: 1em;
   width: 100%;
+  font-size: 0.8em;
 }
 
 footer li {
@@ -415,7 +426,9 @@ footer a {
   }
 
   .header__title {
-    font-size: 4em;
+    font-size: 2.5em;
+    line-height: 2.5em;
+    margin: 0;
   }
 
   .box-shadow-menu {
@@ -439,6 +452,24 @@ footer a {
   .nav__item {
     display: inline-block;
     width: 24%;
+  }
+
+  .header__logo {
+    height: 72px;
+    margin-right: 1em;
+  }
+
+  .snippet__thumbnail {
+    display: block;
+  }
+  .snippet {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .snippet p {
+    max-width: 500px;
+    padding-left: 110px;
   }
 
 }
@@ -485,7 +516,7 @@ footer a {
   right: 0.1em;
   top: 0.5em;
   padding-left: 1.25em;
-  font-size: 3em;
+  font-size: 2em;
   height: 1em;
 }
 
